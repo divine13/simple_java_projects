@@ -1,0 +1,943 @@
+Divine@hlomani:~$ perlintro
+perlintro: command not found
+Divine@hlomani:~$ ls 
+AndroidStudioProjects  derby.log  divine     Downloads   Hello.html           IdeaProjects  Music             Pictures  projects  Templates  VirtualBox VMs
+bin                    Desktop    Documents  glassfish4  hs_err_pid14190.log  jsfjpaCrud    NetBeansProjects  programs  randF     Videos
+Divine@hlomani:~$ ls | cat << 
+bash: syntax error near unexpected token `newline'
+Divine@hlomani:~$ ls | cat << sss
+> sss
+Divine@hlomani:~$ man cat
+Divine@hlomani:~$ <<
+bash: syntax error near unexpected token `newline'
+Divine@hlomani:~$ man <<
+bash: syntax error near unexpected token `newline'
+Divine@hlomani:~$ cat mm < sss
+bash: sss: No such file or directory
+Divine@hlomani:~$ touch hh << "dqdsds"
+> sdsds
+> sdsdsd
+> ^C
+Divine@hlomani:~$ touch hh < "dqdsds"
+sdsds
+sdsdsd
+
+bash: dqdsds: No such file or directory
+sdsds: command not found
+sdsdsd: command not found
+Divine@hlomani:~$ touch hh < "dqdsds"
+bash: dqdsds: No such file or directory
+Divine@hlomani:~$ ls -l 
+total 284
+drwxrwxr-x  4 Divine Divine   4096 Sep  6  2013 AndroidStudioProjects
+drwxrwxr-x  7 root   root     4096 Jun 29  2013 bin
+-rw-rw-r--  1 Divine Divine   8215 Apr 10 16:35 derby.log
+drwxrwxr-x  3 Divine Divine   4096 Apr 17 18:06 Desktop
+drwxrwxr-x  5 Divine Divine   4096 Mar 31 09:44 divine
+drwxrwxr-x 20 Divine Divine  12288 Apr 25 19:46 Documents
+drwxrwxr-x 18 Divine Divine  12288 Apr 19 19:37 Downloads
+drwxrwxr-x 14 Divine Divine   4096 Mar 31 15:51 glassfish4
+-rw-rw-r--  1 Divine Divine   4064 Apr 19 18:48 Hello.html
+-rw-rw-r--  1 Divine Divine 166453 Mar 30 23:06 hs_err_pid14190.log
+drwxrwxr-x 15 Divine Divine   4096 Apr 18 10:14 IdeaProjects
+drwxrwxr-x  5 Divine Divine   4096 Apr 10 16:34 jsfjpaCrud
+drwxrwxr-x 21 Divine Divine  20480 Apr 18 14:02 Music
+drwxrwxr-x 11 Divine Divine   4096 Mar 31 13:10 NetBeansProjects
+drwxrwxr-x  5 Divine Divine   4096 Apr 18 18:36 Pictures
+drwxrwxr-x  7 Divine Divine   4096 Mar 30 09:11 programs
+drwxrwxr-x 13 Divine Divine   4096 Apr  1 11:30 projects
+drwxrwxr-x 10 Divine Divine   4096 Mar 21 20:50 randF
+drwxrwxr-x  3 Divine Divine   4096 Dec 30 14:43 Templates
+drwxrwxr-x 11 Divine Divine   4096 Apr 21 11:48 Videos
+drwxrwxr-x  5 Divine Divine   4096 Mar 30 15:53 VirtualBox VMs
+Divine@hlomani:~$ 
+Divine@hlomani:~$ amarok -nocrashhandler
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+QWidget::insertAction: Attempt to insert null action
+QWidget::setMinimumSize: (Media Sources dock/BrowserDock) Negative sizes (100,-1) are not possible
+QWidget::setMinimumSize: (Playlist dock/Playlist::Dock) Negative sizes (0,-1) are not possible
+********************************************************************************************** 
+** AMAROK WAS STARTED IN NORMAL MODE. IF YOU WANT TO SEE DEBUGGING INFORMATION, PLEASE USE: ** 
+** amarok --debug                                                                           ** 
+********************************************************************************************** 
+Divine@hlomani:~$ X Error: BadWindow (invalid Window parameter) 3
+  Major opcode: 20 (X_GetProperty)
+  Resource id:  0x4400012
+void CollectionScanner::ScanningState::writeFull() QSharedMemory is too small to hold the data. 
+It is of size 1310720 bytes but we need more than 1380616 bytes. 
+^C
+Divine@hlomani:~$ amarok -debug
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+Amarok is already running!
+QDBusConnection: session D-Bus connection created before QCoreApplication. Application may misbehave.
+QWidget::setMinimumSize: (Media Sources dock/BrowserDock) Negative sizes (100,-1) are not possible
+Divine@hlomani:~$ QWidget::setMinimumSize: (Playlist dock/Playlist::Dock) Negative sizes (0,-1) are not possible
+QWidget::setMinimumSize: (Playlist dock/Playlist::Dock) Negative sizes (113,-1) are not possible
+QWidget::setMinimumSize: (Playlist dock/Playlist::Dock) Negative sizes (113,-1) are not possible
+QWidget::setMinimumSize: (Playlist dock/Playlist::Dock) Negative sizes (113,-1) are not possible
+QWidget::setMinimumSize: (Playlist dock/Playlist::Dock) Negative sizes (113,-1) are not possible
+QWidget::setMinimumSize: (Playlist dock/Playlist::Dock) Negative sizes (216,-1) are not possible
+QWidget::setMinimumSize: (Playlist dock/Playlist::Dock) Negative sizes (315,-1) are not possible
+QWidget::setMinimumSize: (Playlist dock/Playlist::Dock) Negative sizes (315,-1) are not possible
+QWidget::setMinimumSize: (Playlist dock/Playlist::Dock) Negative sizes (315,-1) are not possible
+QWidget::setMinimumSize: (Playlist dock/Playlist::Dock) Negative sizes (315,-1) are not possible
+QWidget::setMinimumSize: (Media Sources dock/BrowserDock) Negative sizes (100,-1) are not possible
+QWidget::setMinimumSize: (Media Sources dock/BrowserDock) Negative sizes (100,-1) are not possible
+QWidget::setMinimumSize: (Media Sources dock/BrowserDock) Negative sizes (100,-1) are not possible
+QWidget::setMinimumSize: (Playlist dock/Playlist::Dock) Negative sizes (315,-1) are not possible
+QWidget::setMinimumSize: (Media Sources dock/BrowserDock) Negative sizes (100,-1) are not possible
+QWidget::setMinimumSize: (Playlist dock/Playlist::Dock) Negative sizes (315,-1) are not possible
+QWidget::setMinimumSize: (Media Sources dock/BrowserDock) Negative sizes (100,-1) are not possible
+QWidget::setMinimumSize: (Media Sources dock/BrowserDock) Negative sizes (100,-1) are not possible
+QWidget::setMinimumSize: (Media Sources dock/BrowserDock) Negative sizes (100,-1) are not possible
+QWidget::setMinimumSize: (Media Sources dock/BrowserDock) Negative sizes (100,-1) are not possible                                                                          
+QWidget::setMinimumSize: (Media Sources dock/BrowserDock) Negative sizes (100,-1) are not possible
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+QWidget::setMinimumSize: (Media Sources dock/BrowserDock) Negative sizes (100,-1) are not possible
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+QWidget::setMinimumSize: (Media Sources dock/BrowserDock) Negative sizes (100,-1) are not possible
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+pro
+No command 'pro' found, did you mean:
+ Command 'prof' from package 'profphd' (universe)
+ Command 'proj' from package 'proj-bin' (universe)
+ Command 'pr' from package 'coreutils' (main)
+pro: command not found
+Divine@hlomani:~$ pro
+profiles  prove     
+Divine@hlomani:~$ pro
+profiles  prove     
+Divine@hlomani:~$ prove
+No tests named and 't' directory not found at /usr/share/perl/5.14/App/Prove.pm line 527
+Divine@hlomani:~$ perl
+
+^C
+Divine@hlomani:~$ man perl
+Divine@hlomani:~$ perl
+perl        perl5.14.2  perlbug     perldoc     perlivp     perlthanks  
+Divine@hlomani:~$ perlthanks 
+This program provides an easy way to send a thank-you message
+back to the authors and maintainers of perl.
+
+If you wish to submit a bug report, please run it without the -T
+flag (or run the program perlbug rather than perlthanks)
+
+First of all, please provide a subject for the message.
+Subject: Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+Corrupt JPEG data: premature end of data segment
+Unsupported marker type 0x9f
+^C
+Divine@hlomani:~$ perl
+perl        perl5.14.2  perlbug     perldoc     perlivp     perlthanks  
+Divine@hlomani:~$ perl
+perl        perl5.14.2  perlbug     perldoc     perlivp     perlthanks  
+Divine@hlomani:~$ man prl
+No manual entry for prl
+Divine@hlomani:~$ man perl
+Divine@hlomani:~$ perlintro
+perlintro: command not found
+Divine@hlomani:~$ man perl
+Divine@hlomani:~$ libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+X Error: BadWindow (invalid Window parameter) 3
+  Major opcode: 20 (X_GetProperty)
+  Resource id:  0x44003ae
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+libpng error: IDAT: CRC error
+X Error: BadWindow (invalid Window parameter) 3
+  Major opcode: 20 (X_GetProperty)
+  Resource id:  0x440043b
+e
+e: command not found
+Divine@hlomani:~$ 
+Divine@hlomani:~$ clear
+Divine@hlomani:~$ locate scjp
+/home/Divine/.local/share/Trash/files/scjp.txt
+/home/Divine/.local/share/Trash/files/scjp_copy.txt
+/home/Divine/.local/share/Trash/info/scjp.txt.trashinfo
+/home/Divine/.local/share/Trash/info/scjp_copy.txt.trashinfo
+/home/Divine/projects/java_projects/scjp_projects
+/home/Divine/projects/java_projects/scjp_projects/compiled_classes
+/home/Divine/projects/java_projects/scjp_projects/src
+/home/Divine/projects/java_projects/scjp_projects/compiled_classes/Hello.class
+/home/Divine/projects/java_projects/scjp_projects/compiled_classes/Identifiers.class
+/home/Divine/projects/java_projects/scjp_projects/compiled_classes/MyPrinter.class
+/home/Divine/projects/java_projects/scjp_projects/src/.git
+/home/Divine/projects/java_projects/scjp_projects/src/.gitignore
+/home/Divine/projects/java_projects/scjp_projects/src/Answers
+/home/Divine/projects/java_projects/scjp_projects/src/Answers_copy.txt
+/home/Divine/projects/java_projects/scjp_projects/src/Dummy.class
+/home/Divine/projects/java_projects/scjp_projects/src/Dummy.java
+/home/Divine/projects/java_projects/scjp_projects/src/FileByteCopy.java
+/home/Divine/projects/java_projects/scjp_projects/src/FileCopier.class
+/home/Divine/projects/java_projects/scjp_projects/src/FileCopier.java
+/home/Divine/projects/java_projects/scjp_projects/src/FileNavigator.java
+/home/Divine/projects/java_projects/scjp_projects/src/ReadWriteClassTest.class
+/home/Divine/projects/java_projects/scjp_projects/src/ReadWriteClassTest.java
+/home/Divine/projects/java_projects/scjp_projects/src/com
+/home/Divine/projects/java_projects/scjp_projects/src/hello
+/home/Divine/projects/java_projects/scjp_projects/src/outputfile
+/home/Divine/projects/java_projects/scjp_projects/src/run.sh
+/home/Divine/projects/java_projects/scjp_projects/src/scjp.txt
+/home/Divine/projects/java_projects/scjp_projects/src/.git/COMMIT_EDITMSG
+/home/Divine/projects/java_projects/scjp_projects/src/.git/HEAD
+/home/Divine/projects/java_projects/scjp_projects/src/.git/branches
+/home/Divine/projects/java_projects/scjp_projects/src/.git/config
+/home/Divine/projects/java_projects/scjp_projects/src/.git/description
+/home/Divine/projects/java_projects/scjp_projects/src/.git/gitk.cache
+/home/Divine/projects/java_projects/scjp_projects/src/.git/hooks
+/home/Divine/projects/java_projects/scjp_projects/src/.git/index
+/home/Divine/projects/java_projects/scjp_projects/src/.git/info
+/home/Divine/projects/java_projects/scjp_projects/src/.git/logs
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects
+/home/Divine/projects/java_projects/scjp_projects/src/.git/refs
+/home/Divine/projects/java_projects/scjp_projects/src/.git/hooks/applypatch-msg.sample
+/home/Divine/projects/java_projects/scjp_projects/src/.git/hooks/commit-msg.sample
+/home/Divine/projects/java_projects/scjp_projects/src/.git/hooks/post-update.sample
+/home/Divine/projects/java_projects/scjp_projects/src/.git/hooks/pre-applypatch.sample
+/home/Divine/projects/java_projects/scjp_projects/src/.git/hooks/pre-commit.sample
+/home/Divine/projects/java_projects/scjp_projects/src/.git/hooks/pre-rebase.sample
+/home/Divine/projects/java_projects/scjp_projects/src/.git/hooks/prepare-commit-msg.sample
+/home/Divine/projects/java_projects/scjp_projects/src/.git/hooks/update.sample
+/home/Divine/projects/java_projects/scjp_projects/src/.git/info/exclude
+/home/Divine/projects/java_projects/scjp_projects/src/.git/logs/HEAD
+/home/Divine/projects/java_projects/scjp_projects/src/.git/logs/refs
+/home/Divine/projects/java_projects/scjp_projects/src/.git/logs/refs/heads
+/home/Divine/projects/java_projects/scjp_projects/src/.git/logs/refs/heads/master
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/02
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/07
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/0c
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/0d
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/14
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/17
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/19
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/1b
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/1c
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/1e
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/1f
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/20
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/23
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/24
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/26
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/27
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/2b
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/2c
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/2d
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/2f
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/34
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/35
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/36
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/37
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/3c
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/3e
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/49
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/4f
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/51
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/52
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/53
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/56
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/57
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/5b
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/61
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/63
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/69
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/6e
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/71
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/75
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/80
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/81
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/89
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/8b
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/8c
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/92
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/9b
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/9d
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/9e
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/a2
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/a4
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/a6
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/a7
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/a8
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/ab
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/ad
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/b3
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/b9
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/ba
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/bb
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/be
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/c0
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/c1
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/c5
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/cd
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/d1
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/d6
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/da
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/df
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/e0
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/e2
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/e6
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/ee
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/ef
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/f4
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/f6
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/f7
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/fc
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/fe
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/info
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/pack
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/02/06a19a37eba3f19a37c39ed67ca035bfe6e6ea
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/07/18e08dcd3c10263cd7b7b017f10fc44d7b0585
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/0c/ccc44b07c90fee33634fb7ad4de172ae320fb8
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/0d/4288d83e9a42a0cff61d582305f64ffa182a4a
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/14/d9bdd9831a14400e72c3552c94be6ee6a8edd2
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/17/0773328a89845b6f3501d9f59b62013fbdf799
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/19/55a674e6ccf85000b4737f0bc7f1290b38cec0
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/1b/560aceed70de51b6c1856fd83f3803f3c0607a
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/1c/fdadfe64ee63c050808ffd7cb86bde203e0b17
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/1e/d5ecf24ec50ff978cd5f49c19a5568b010a6c0
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/1f/9107cc2cc54430096d1363cdef8568c8728dbd
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/20/b40dc435493af8cb8f9da46a63faf7277922ed
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/23/3373fa6b25dc207b15905195016d52ce2e202e
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/24/338e2fb38b222a5309f2a87d8059da7935db49
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/26/e14dc0910ea456f454491d4bc771c45fdab4ec
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/27/9cdd58a7706c2321ac37dc757a2b3028f10ef1
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/2b/ab66d013aa3e84e99aa5b23837cd7624f54035
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/2b/e38c82c92447832574aa75029c14d98007bf46
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/2b/ed55337b55265c6d2d2e1cf4dc76929d88d5c3
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/2c/9157a25f78dddd72be26b00518818a56648946
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/2d/ec37796315732ea51e10ab6e4e7ab79f4957f1
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/2f/6dcd62b49235ff7df269ac90c8290f87ca0918
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/2f/794675c2e91295a0b52bd45c38e9f86f7cc050
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/34/e300d9cb177ec2b18d8b45469050eaad0bad6e
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/35/baf1d6162129e5082862418b9010f84b8f0c08
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/36/f10e26493d234d8d485749d4a4a644cea209b2
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/37/2123b026108065865780b2eca983b623b79b2d
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/3c/f20e4277f0931d131b04fb803c9778ce0e6435
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/3e/74ac46bf79e31eee19bc01b2e8f5955fb49c71
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/49/1b9713e955f477c5b4a72e519d578455e4c8e2
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/4f/cbd9548d572b06ad1ec4785c4fbebcf44b9a33
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/51/48d53dabf345aa1a9cd7059346030e72aa6aa2
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/52/41a7220a93c9db3e5d0cb642586fd917393c39
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/53/e7661d2f3f608b5831c8836bf247eeb3aa3a62
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/56/54fdbb54c042fb963a41eccd43a4919363a88a
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/57/580404510c44a3198e6c8f1b51e097ca3bfffc
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/5b/fce0a5485bf870bdfa17f2cc355a09db3e363f
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/61/7e14f71eda3c2323218caa36c187ad746728db
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/63/c0424c18920f710355b24c03d7ba03712c348d
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/69/757bb7b41bfb82fb0eb64362592ed3b751e6b4
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/6e/6c22e6c739280a1db3b252948d40d8c98b667a
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/71/22ea16294024b315f7fa3c0a6fd224f562b43b
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/75/918259496d478bb5d3c57af4e0d72d278ab8cb
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/80/6fc461b69f8e1c74238133c313bb980624c80f
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/81/1a8d425c51b6f06e1d49f63f1f5049ad3bc9ea
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/81/b2be089edcfb3204f52a32cbff5754557a93af
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/89/2369e302c61d253f1be273c615a95a3d24a2b1
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/8b/3e0578970514dbcc9db83d309ea75d29d2992a
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/8c/55abefe50cd2132b36c02a33743581dc6caf2e
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/92/f8e753391a7b53c64c7d240c426da9d64f0720
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/9b/3bb95110a8b1ea5338d902cdda2de21ed7711f
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/9d/7abe237b8d0f13c3105a928f529ee85f9898e1
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/9e/ad13d583203e3546f41199adf01298bb3a5d4c
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/a2/27c8598d74bb15f197424d5421dddd1cc3ea96
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/a4/3deccbb6cc483618c4c9f42fa636f4a15e7726
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/a6/655dd7d777fc87a38e6824902692ec9cffdf7c
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/a7/78f75c391c397632fcdde2d3ee7e53059b26ff
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/a8/876b98df1c0a9e5c17a5ff81b0b4f76dea5207
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/ab/403fb98128444ef34f396ec27cd3c53e811306
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/ad/a5e5774a84e1cee100dd3ab8a156466e700b58
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/b3/352273185c85e8bd4c79491021407c39483801
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/b9/4eeb63bc9c44418d60969f3e9df50ca9caed96
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/ba/c4901b036711cd5fa8b7b2068cb756141b69bc
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/bb/7bf9eb70524d5f6645873bb7cf23f3aa6432df
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/be/0d1faa81854d2295c7190516a2c2adb0f33fbd
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/c0/e8a62435aa70740d8a0c7ca0adbfe92d89712f
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/c1/b5ee300f4dde7607f1f5a70dfce48878a1825b
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/c5/de129e2dad2984b458fc4a546e67b84df9d16b
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/cd/5d11080fc1cba7fb4b8acc2eddfb4fabc76a0d
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/d1/2727a38f5ae1c997f4ac8cd4e9d696fe79f01f
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/d6/620898b4977e831641ee58c901da010d1f5278
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/da/0b88c1ee7090682dbfa34e74540cdc4f160c6e
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/df/021656b6518f13a16780ffcc9d0d9c551bdec4
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/e0/82d7598f37bc1f0b5c764a771c7e93bfa8ebeb
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/e2/7d842e05b32897d56ac8452f09b44b2dbbaad2
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/e6/8957595895a318e2704f288b01db6d774cd73b
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/ee/4ec0eb0195bcafbf949bd29a88d6670b1f891e
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/ef/d93f3d34d8ab177110a475f3230e79efe87bd5
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/f4/5ac003bd1d92866523d5bdf76d59472ed3f3e7
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/f6/ec9f92b2599975c7e9837ab5c90f60431d619a
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/f7/d9d181fbd8ddf0d346a692b17de9e0067ad0ee
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/fc/33508e5c8d86df06436eb058db6f9fc3d761f5
+/home/Divine/projects/java_projects/scjp_projects/src/.git/objects/fe/e37aafbfd5e3c93fff7d3da543c7c7145923f7
+/home/Divine/projects/java_projects/scjp_projects/src/.git/refs/heads
+/home/Divine/projects/java_projects/scjp_projects/src/.git/refs/tags
+/home/Divine/projects/java_projects/scjp_projects/src/.git/refs/heads/master
+/home/Divine/projects/java_projects/scjp_projects/src/com/Alphabet.class
+/home/Divine/projects/java_projects/scjp_projects/src/com/AssertionExample.class
+/home/Divine/projects/java_projects/scjp_projects/src/com/AssertionExample.java
+/home/Divine/projects/java_projects/scjp_projects/src/com/Colors$ThreeColors.class
+/home/Divine/projects/java_projects/scjp_projects/src/com/Colors.class
+/home/Divine/projects/java_projects/scjp_projects/src/com/Con.class
+/home/Divine/projects/java_projects/scjp_projects/src/com/Con.java
+/home/Divine/projects/java_projects/scjp_projects/src/com/EnumTest.class
+/home/Divine/projects/java_projects/scjp_projects/src/com/EnumTest.java
+/home/Divine/projects/java_projects/scjp_projects/src/com/EnumTester.class
+/home/Divine/projects/java_projects/scjp_projects/src/com/EnumTester.java
+/home/Divine/projects/java_projects/scjp_projects/src/com/EnumsGames.class
+/home/Divine/projects/java_projects/scjp_projects/src/com/EnumsGames.java
+/home/Divine/projects/java_projects/scjp_projects/src/com/FileByteCopy.class
+/home/Divine/projects/java_projects/scjp_projects/src/com/FileByteCopy.java
+/home/Divine/projects/java_projects/scjp_projects/src/com/FileConstrutorsTest.class
+/home/Divine/projects/java_projects/scjp_projects/src/com/FileConstrutorsTest.java
+/home/Divine/projects/java_projects/scjp_projects/src/com/FileNavigator.class
+/home/Divine/projects/java_projects/scjp_projects/src/com/FileNavigator.java
+/home/Divine/projects/java_projects/scjp_projects/src/com/Hello.class
+/home/Divine/projects/java_projects/scjp_projects/src/com/Hello.java
+/home/Divine/projects/java_projects/scjp_projects/src/com/Identifiers.class
+/home/Divine/projects/java_projects/scjp_projects/src/com/Identifiers.java
+/home/Divine/projects/java_projects/scjp_projects/src/com/IfTest.class
+/home/Divine/projects/java_projects/scjp_projects/src/com/IfTest.java
+/home/Divine/projects/java_projects/scjp_projects/src/com/Loops.class
+/home/Divine/projects/java_projects/scjp_projects/src/com/Loops.java
+/home/Divine/projects/java_projects/scjp_projects/src/com/Mem$Mos.class
+/home/Divine/projects/java_projects/scjp_projects/src/com/Mem.class
+/home/Divine/projects/java_projects/scjp_projects/src/com/Mem.java
+/home/Divine/projects/java_projects/scjp_projects/src/com/Misc.class
+/home/Divine/projects/java_projects/scjp_projects/src/com/Misc.java
+/home/Divine/projects/java_projects/scjp_projects/src/com/Mos.class
+/home/Divine/projects/java_projects/scjp_projects/src/com/MultipleExceptions.class
+/home/Divine/projects/java_projects/scjp_projects/src/com/MultipleExceptions.java
+/home/Divine/projects/java_projects/scjp_projects/src/com/MyPrinter.class
+/home/Divine/projects/java_projects/scjp_projects/src/com/PrintingMachine.class
+/home/Divine/projects/java_projects/scjp_projects/src/com/PrintingMachine.java
+/home/Divine/projects/java_projects/scjp_projects/src/com/Quark.class
+/home/Divine/projects/java_projects/scjp_projects/src/com/ReadWriteClassTest.java
+/home/Divine/projects/java_projects/scjp_projects/src/com/RunMiscs.class
+/home/Divine/projects/java_projects/scjp_projects/src/com/Signal.class
+/home/Divine/projects/java_projects/scjp_projects/src/com/StaticNested$Printer.class
+/home/Divine/projects/java_projects/scjp_projects/src/com/StaticNested.class
+/home/Divine/projects/java_projects/scjp_projects/src/com/StaticNested.java
+/home/Divine/projects/java_projects/scjp_projects/src/com/Student.class
+/home/Divine/projects/java_projects/scjp_projects/src/com/Student.java
+/home/Divine/projects/java_projects/scjp_projects/src/com/SwitchTest$1.class
+/home/Divine/projects/java_projects/scjp_projects/src/com/SwitchTest.class
+/home/Divine/projects/java_projects/scjp_projects/src/com/SwitchTest.java
+/home/Divine/projects/java_projects/scjp_projects/src/com/TestInner.class
+/home/Divine/projects/java_projects/scjp_projects/src/com/TestInner.java
+/home/Divine/projects/java_projects/scjp_projects/src/com/TopLevel$MyInnerClass.class
+/home/Divine/projects/java_projects/scjp_projects/src/com/TopLevel.class
+/home/Divine/projects/java_projects/scjp_projects/src/com/TopLevel.java
+/home/Divine/projects/java_projects/scjp_projects/src/com/WaistSize.class
+/home/Divine/projects/java_projects/scjp_projects/src/hello/data
+/home/Divine/projects/java_projects/scjp_projects/src/hello/sellow
+/home/Divine/projects/java_projects/scjp_projects/src/hello/sellow/dataS
+Divine@hlomani:~$ manQWidget::setMinimumSize: (Media Sources dock/BrowserDock) Negative sizes (115,-1) are not possible
+kmimetype filetype guessing failed for /home/Divine/Documents/20130730154508_create_users.rb 
+kmimetype filetype guessing failed for /home/Divine/Documents/20130802154258_add_index_to_users.rb 
+kmimetype filetype guessing failed for /home/Divine/Documents/20130802164748_add_password_digest_to_users.rb 
+kmimetype filetype guessing failed for /home/Divine/Documents/add-a-javascript-display-to-the-home-page-to-count-down-from-140-characters-ra.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/android-beginners-guide.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/Android-Tutorial.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/android_tutorial.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/array-examples-demonstration-and-code-snippets.php.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/balloons_en.jar 
+kmimetype filetype guessing failed for /home/Divine/Documents/Beginning CSS 3rd Edition.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/carrierwave.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/circle.txt 
+kmimetype filetype guessing failed for /home/Divine/Documents/circuit-construction-kit-ac-virtual-lab_en.jar 
+kmimetype filetype guessing failed for /home/Divine/Documents/circuit-construction-kit-ac_en.jar 
+kmimetype filetype guessing failed for /home/Divine/Documents/Classic Eclipse.zip 
+kmimetype filetype guessing failed for /home/Divine/Documents/Components Â· Bootstrap.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/Computer_science.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/confs 
+kmimetype filetype guessing failed for /home/Divine/Documents/Create a Simple Music Streaming App with Ruby on Rails _ Nettuts_.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/css_tutorial(2).pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/css_tutorial.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/demo.zip 
+kmimetype filetype guessing failed for /home/Divine/Documents/divine13 paperclip.html 
+kmimetype filetype guessing failed for /home/Divine/Documents/Django_(web_framework).pdf 
+okmimetype filetype guessing failed for /home/Divine/Documents/Extreme_Programming__A_Gentle_Introduction..html.txt 
+kmimetype filetype guessing failed for /home/Divine/Documents/Gem Paperclip_ Uploading files and pictures into your Rails application _ code.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/Gemfile 
+kmimetype filetype guessing failed for /home/Divine/Documents/git-for-beginners-the-definitive-practical-guide.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/gradle-1.7-all.zip 
+kmimetype filetype guessing failed for /home/Divine/Documents/gThe Weeknd - Kiss Land - AlbumJams.zip 
+kmimetype filetype guessing failed for /home/Divine/Documents/Hacking Exposed Computer Forensics 2nd Edition.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/hakin9_wifi_EN.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/Hello Android 3rd Edition.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/How to setup Dual Monitor in Ubuntu 10.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/How to Use Faye as a Real-Time Push Server in Rails _ Nettuts+.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/How To_ Allow users to sign in using their username or email address Â· plataformatec_devise Wiki.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/ideasss 
+kmimetype filetype guessing failed for /home/Divine/Documents/Installing Android Studio IDE in Ubuntu â Hello World Application _ CNXSoft â Embedded Software Development(2).pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/Installing Android Studio IDE in Ubuntu â Hello World Application _ CNXSoft â Embedded Software Development.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/Integrating with Dropbox API for fun and profit - Tomash corner-1.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/Integrating with Dropbox API for fun and profit - Tomash corner.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/introduction-to-haml(2).pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/introduction-to-haml.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/java-samples-P6-Maths-Prelims-2013-Rosyth.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/javafx-2-datasheet-496523.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/jquery-id.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/jquery-tutorial-beginners.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/jQuery_Cookbook.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/karel_en.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/learn.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/Learning Android Application Programming for the Kindle Fire.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/logo.odg 
+kmimetype filetype guessing failed for /home/Divine/Documents/Macbuntu-10.10.tar.gz 
+kmimetype filetype guessing failed for /home/Divine/Documents/MySQL Java tutorial.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/new.html.erb.txt 
+kmimetype filetype guessing failed for /home/Divine/Documents/notebook.zim 
+kmimetype filetype guessing failed for /home/Divine/Documents/object-oriented-programming.html.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/Obsidian.zip 
+kmimetype filetype guessing failed for /home/Divine/Documents/ohms-law_en.jar 
+kmimetype filetype guessing failed for /home/Divine/Documents/opera_12.11.1661_amd64.deb 
+kmimetype filetype guessing failed for /home/Divine/Documents/plataformatec_devise.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/Press Quality.joboptions 
+kmimetype filetype guessing failed for /home/Divine/Documents/Professional Android 4 Application Development.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/Programming Groovy 2.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/rails 
+kmimetype filetype guessing failed for /home/Divine/Documents/rails-directory-structure.htm.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/report.odt 
+kmimetype filetype guessing failed for /home/Divine/Documents/Ruby on Rails 3.1 Installation â Ubuntu (11.04_ 11.10) and Linux Mint (11_ 12) _ Mircea Goia - web developer and web consultant_ aspiring filmmaker.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/Ruby on Rails Screencasts - RailsCasts.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/ruby(2).pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/ruby-1.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/ruby.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/ruby_on_rails_tutorial_2nd_edition.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/ruby_tutorial.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/sibonile wedding 
+kmimetype filetype guessing failed for /home/Divine/Documents/tBig Sean - Hall Of Fame - AlbumJams.zip 
+kmimetype filetype guessing failed for /home/Divine/Documents/train-your-brain-build-a-framework-for-clear-thinking.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/tutorialWithXMLEditing_files-1.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/unix_tutorial(2).pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/unix_tutorial.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/Vibrant Ink.zip 
+kmimetype filetype guessing failed for /home/Divine/Documents/Vision.docx 
+kmimetype filetype guessing failed for /home/Divine/Documents/wat.mov 
+kmimetype filetype guessing failed for /home/Divine/Documents/Writing your first Django app_ part 1 _ Django documentation _ Django-1.pdf 
+kmimetype filetype guessing failed for /home/Divine/Documents/Writing your first Django app_ part 1 _ Django documentation _ Django.pdf 
+^C
+Divine@hlomani:~$ clear
+Divine@hlomani:~$ perlintroQWidget::setMinimumSize: (Media Sources dock/BrowserDock) Negative sizes (100,-1) are not possible
+amarok -nocrashhancls
+No command 'cls' found, but there are 18 similar ones
+cls: command not found
+Divine@hlomani:~$ clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Divine@hlomani:~$ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
